@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
-titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+title = "BB"
+titleSeparator = ""
+titleAddition = ""
+description = "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate..."
 
 ## Documentation
 # docsVersion = "0.3"
@@ -13,7 +13,7 @@ description = "Doks is a Hugo theme for building secure, fast, and SEO-ready doc
 images = ["doks.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+titleHome = "Biblioteca Bitcoiner"
 
 ## Twitter Cards
 twitterSite = "@getdoks"
@@ -34,9 +34,9 @@ schemaLogoHeight = 512
 schemaImage = "doks.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/VentunoBtc"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/ventunobtc/bibliotecabitcoiner"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -65,7 +65,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by  <a class=\"text-muted\" href=\"https://ventuno.space/\">Ventuno.BTC</a>"
 
 # Feed
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
