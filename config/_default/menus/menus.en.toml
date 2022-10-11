@@ -2,39 +2,39 @@
 [[satoshi]]
   name = "Cryptography Mailing List"
   weight = 10
-  identifier = "cryptography-mailing-list"
-  url = "/satoshi/cryptography-mailing-list/"
+  identifier = "cryptografy-mailing-list"
+  url = "/satoshi/cryptografy-mailing-list"
 
 [[satoshi]]
   name = "P2P Foundation"
   weight = 20
   identifier = "p2p-foundation"
-  url = "/satoshi/p2p-foundation/"
+  url = "/satoshi/p2p-foundation"
 
 [[satoshi]]
   name = "Bitcoin-list"
   weight = 30
   identifier = "bitcoin-list"
-  url = "/satoshi/bitcoin-list/"
+  url = "/satoshi/bitcoin-list"
 
 [[satoshi]]
   name = "Bitcointalk"
   weight = 40
   identifier = "bitcointalk"
-  url = "/satoshi/bitcointalk/"
+  url = "/satoshi/bitcointalk"
 
 ######## Cypherpunk ########
 [[cypherpunk]]
   name = "Timothy May"
   weight = 10
   identifier = "timothy-may"
-  url = "/cypherpunk/timothy-may/"
+  url = "/cypherpunk/timothy-may"
 
 [[cypherpunk]]
   name = "Nick Szabo"
   weight = 20
   identifier = "nick-szabo"
-  url = "/cypherpunk/nick-szabo/"
+  url = "/cypherpunk/nick-szabo"
 
 ######## Main ########
 [[main]]
@@ -44,17 +44,17 @@
 
 [[main]]
   name = "Cypherpunk"
-  url = "/cypherpunk/"
+  url = "/cypherpunk"
   weight = 20
 
 [[main]]
   name = "Bitcoin"
-  url = "/bitcoin/"
+  url = "/bitcoin"
   weight = 30
 
 [[main]]
   name = "Blog"
-  url = "/blog/"
+  url = "/blog"
   weight = 40
 
 ######## Social & Footer ########
