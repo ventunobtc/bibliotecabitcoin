@@ -1,68 +1,47 @@
-[[docs]]
-  name = "Prologue"
+[[satoshi]]
+  name = "Email"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "email"
+  url = "/satoshi/email/"
 
-[[docs]]
-  name = "Help"
+[[satoshi]]
+  name = "P2P Foundation"
+  weight = 20
+  identifier = "p2p-foundation"
+  url = "/satoshi/p2p-foundation/"
+
+[[satoshi]]
+  name = "Bitcointalk Post"
   weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "bitcointalk-post"
+  url = "/satoshi/bitcointalk-post/"
 
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
-
-[[guide]]
-  name = "Lorem"
+[[cypherpunk]]
+  name = "Timothy May"
   weight = 10
-  identifier = "lorem"
-  url = "/guide/lorem/"
+  identifier = "timothy-may"
+  url = "/cypherpunk/timothy-may/"
 
-[[tutorial]]
-  name = "Lorem"
-  weight = 10
-  identifier = "lorem"
-  url = "/tutorial/lorem/"
+[[cypherpunk]]
+  name = "Nick Szabo"
+  weight = 20
+  identifier = "nick-szabo"
+  url = "/cypherpunk/nick-szabo/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
+  name = "Satoshi"
+  url = "/satoshi"
   weight = 10
 
-# [[main]]
-#   name = "Tutorial"
-#   url = "/tutorial/lorem/ipsum/"
-#   weight = 15
+[[main]]
+  name = "Cypherpunk"
+  url = "/cypherpunk/"
+  weight = 20
 
 [[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 20
-
-[[main]]
-  name = "Get Started"
   weight = 30
-  identifier = "get-started"
-  url = "/docs/prologue/introduction/"
-
-[[main]]
-  name = "Quick Start"
-  weight = 40
-  identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
-  parent = "get-started"
-
-[[main]]
-  name = "Tutorial"
-  weight = 50
-  identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
-  parent = "get-started"
 
 [[social]]
   name = "GitHub"
