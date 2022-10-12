@@ -1,9 +1,16 @@
+######## Bitcoin ########
+[[satoshi]]
+  name = "Bips"
+  weight = 10
+  identifier = "bips"
+  url = "/bitcoin/bips"
+
 ######## Satoshi ########
 [[satoshi]]
   name = "Cryptography Mailing List"
   weight = 10
-  identifier = "cryptografy-mailing-list"
-  url = "/satoshi/cryptografy-mailing-list"
+  identifier = "cryptography-mailing-list"
+  url = "/satoshi/cryptography-mailing-list"
 
 [[satoshi]]
   name = "P2P Foundation"
@@ -75,11 +82,6 @@
   name = "Bitcoin"
   url = "/bitcoin"
   weight = 30
-
-[[main]]
-  name = "Blog"
-  url = "/blog"
-  weight = 40
 
 ######## Social & Footer ########
 [[social]]
