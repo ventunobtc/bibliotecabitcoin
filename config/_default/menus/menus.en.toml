@@ -25,16 +25,40 @@
 
 ######## Cypherpunk ########
 [[cypherpunk]]
-  name = "Timothy May"
+  name = "Eric Hughes"
   weight = 10
+  identifier = "eric-hughes"
+  url = "/satoshi/eric-hughes"
+
+[[cypherpunk]]
+  name = "Chuck Hammill"
+  weight = 20
+  identifier = "chuck-hammill"
+  url = "/satoshi/chuck-hammill"
+
+[[cypherpunk]]
+  name = "Hal Finney"
+  weight = 30
+  identifier = "hal-finney"
+  url = "/satoshi/hal-finney"
+
+[[cypherpunk]]
+  name = "Timothy May"
+  weight = 40
   identifier = "timothy-may"
   url = "/cypherpunk/timothy-may"
 
 [[cypherpunk]]
   name = "Nick Szabo"
-  weight = 20
+  weight = 50
   identifier = "nick-szabo"
   url = "/cypherpunk/nick-szabo"
+
+[[cypherpunk]]
+  name = "David Chaum"
+  weight = 60
+  identifier = "david-chaum"
+  url = "/cypherpunk/david-chaum"
 
 ######## Main ########
 [[main]]
