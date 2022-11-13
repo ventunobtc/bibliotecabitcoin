@@ -13,6 +13,9 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 # defaultContentLanguageInSubdir = true
 
+[params]
+  mainSections = ["satoshi", "cypherpunk", "bitcoin"]
+
 # add redirects/headers
 [outputs]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]

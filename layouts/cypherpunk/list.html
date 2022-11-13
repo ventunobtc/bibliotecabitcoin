@@ -3,42 +3,12 @@
   <div class="col-md-12 col-lg-10 col-xl-8">
     <article>
       <h1 class="text-center">{{ if eq .CurrentSection .FirstSection }}{{ .Section | humanize }}{{ else }}{{ .Title }}{{ end }}</h1>
-      <div class="text-center">{{ .Content }}</div>
-        <div class="card-list">
-         {{ $currentSection := .CurrentSection }}
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/eric-hughes/introduzione">Eric Hughes &rarr;</a>
-            </div>
-          </div>
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/chuck-hammill/introduzione">Chuck Hammill &rarr;</a>
-            </div>
-          </div>
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/hal-finney/introduzione">Hal Finney &rarr;</a>
-            </div>
-          </div>
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/timothy-may/introduzione">Timothy C. May &rarr;</a>
-            </div>
-          </div>
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/nick-szabo/introduzione">Nick Szabo &rarr;</a>
-            </div>
-          </div>
-          <div class="card my-3">
-            <div class="card-body">
-              <a class="stretched-link" href="/cypherpunk/david-chaum/introduzione">David Chaum &rarr;</a>
-            </div>
-          </div>
-        </div>
+      <div align="justify">{{ .Content }}</div>
+      <div class="card-list">
+        {{ $currentSection := .CurrentSection }}
       </div>
     </article>
   </div>
 </div>
 {{ end }}
+
