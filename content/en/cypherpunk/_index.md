@@ -1,5 +1,6 @@
 ---
 title: "Cypherpunk"
+description: "Tutte le pubblicazioni dei membri del movimento cypherpunk"
 date: 2022-10-11T03:43:19+02:00
 draft: false
 ---
