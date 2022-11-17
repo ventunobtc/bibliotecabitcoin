@@ -1,14 +1,13 @@
 {
-  "name": "@hyas/doks",
-  "description": "Doks theme",
-  "version": "0.5.0",
+  "name": "@ventunobtc/bibliotecabitcoiner",
+  "description": "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate...",
   "engines": {
     "node": ">=16.16.0"
   },
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/ventunobtc/bibliotecabitcoiner",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

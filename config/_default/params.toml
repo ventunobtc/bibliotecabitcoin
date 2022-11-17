@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "BB"
-titleSeparator = ""
-titleAddition = ""
+title = "Biblioteca Bitcoiner"
+titleSeparator = "-"
+titleAddition = "BB"
 description = "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate..."
 
 ## Documentation
