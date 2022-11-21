@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Doks" src="https://doks.netlify.app/doks.svg" width="60">
+  <a href="https://bibliotecabitcoiner.org/">
+    <img alt="Doks" src="https://bibliotecabitcoiner.org/favicon.ico" width="60">
   </a>
 </p>
 
@@ -25,7 +25,7 @@ Sostieni i nostri sforzi donando al seguente Lightning address
 
 ## Come contribuire 🤝
 
-Se vuoi tradurre un documento e pubblicarlo nella biblioteca, leggi questa semplice guida su come contribuire.
+Se vuoi tradurre un documento e pubblicarlo nella biblioteca, leggi questa semplice <a href="https://github.com/ventunobtc/bibliotecabitcoiner/blob/master/HOW_HELP.md">guida</a> su come contribuire.
 
 
 ## Biblioteca Libertaria 🗽
