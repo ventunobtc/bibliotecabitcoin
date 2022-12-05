@@ -25,7 +25,7 @@
   package = "netlify-plugin-submit-sitemap"
 
 	[plugins.inputs]
-    baseUrl = "https://bibliotecabitcoiner.netlify.app/"
+    baseUrl = "https://bibliotecabitcoin.netlify.app/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
     providers = [

@@ -1,5 +1,5 @@
 {
-  "name": "@ventunobtc/bibliotecabitcoiner",
+  "name": "@ventunobtc/bibliotecabitcoin",
   "description": "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate...",
   "engines": {
     "node": ">=16.16.0"
@@ -7,7 +7,7 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/ventunobtc/bibliotecabitcoiner",
+  "repository": "https://github.com/ventunobtc/bibliotecabitcoin",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

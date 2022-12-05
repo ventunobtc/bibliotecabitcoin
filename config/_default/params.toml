@@ -1,7 +1,7 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Biblioteca Bitcoiner"
+title = "Biblioteca Bitcoin"
 titleSeparator = "-"
 titleAddition = "BB"
 description = "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate..."
@@ -12,8 +12,8 @@ description = "Ho lavorato a un nuovo sistema di contante elettronico completame
 ## Open Graph
 images = []
 ogLocale = "en_US"
-domainTLD = "bibliotecabitcoiner.org"
-titleHome = "Biblioteca Bitcoiner"
+domainTLD = "bibliotecabitcoin.org"
+titleHome = "Biblioteca Bitcoin"
 
 ## Twitter Cards
 twitterSite = "@VentunoBtc"
@@ -22,7 +22,7 @@ twitterCreator = ""
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Biblioteca Bitcoiner"
+schemaName = "Biblioteca Bitcoin"
 schemaAuthor = ""
 schemaAuthorTwitter = ""
 schemaAuthorLinkedIn = ""
@@ -36,7 +36,7 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/VentunoBtc"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/ventunobtc/bibliotecabitcoiner"
+schemaGitHub = "https://github.com/ventunobtc/bibliotecabitcoin"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -80,7 +80,7 @@ alertText = ""
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/ventunobtc/bibliotecabitcoiner"
+docsRepo = "https://github.com/ventunobtc/bibliotecabitcoin"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false

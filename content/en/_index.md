@@ -1,5 +1,5 @@
 ---
-title : "Biblioteca Bitcoiner"
+title : "Biblioteca Bitcoin"
 description: "Ho lavorato a un nuovo sistema di contante elettronico completamente peer-to-peer, senza terze parti fidate..."
 lead: "Ho lavorato a un nuovo sistema di contante elettronico completamente
 peer-to-peer, senza terze parti fidate..."

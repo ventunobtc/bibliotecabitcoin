@@ -1,10 +1,10 @@
-name = "Biblioteca Bitcoiner"
+name = "Biblioteca Bitcoin"
 license = "MIT"
-licenselink = "https://github.com/ventunobtc/bibliotecabitcoiner/blob/master/LICENSE"
+licenselink = "https://github.com/ventunobtc/bibliotecabitcoin/blob/master/LICENSE"
 description = "Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 
-homepage = "https://github.com/ventunobtc/bibliotecabitcoiner"
-demosite = "https://bibliotecabitcoiner.netlify.app/"
+homepage = "https://github.com/ventunobtc/bibliotecabitcoin"
+demosite = "https://bibliotecabitcoin.netlify.app/"
 
 tags = ["landing page", "documentation", "blog", "minimal", "modern", "customizable", "search", "dark mode", "bootstrap"]
 features = ["security aware", "fast by default", "seo-ready", "development tools", "bootstrap framework", "netlify-ready", "full text search", "page layouts", "dark mode"]
