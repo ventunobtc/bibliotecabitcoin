@@ -1,4 +1,4 @@
-baseurl = "https://bibliotecabitcoiner.netlify.app/"
+baseurl = "https://bibliotecabitcoin.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
