@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bibliotecabitcoin.org/">
-    <img alt="Doks" src="https://bibliotecabitcoin.org/favicon.ico" width="60">
+    <img alt="BB" src="https://bibliotecabitcoin.org/favicon.ico" width="60">
   </a>
 </p>
 
@@ -20,7 +20,7 @@ Tutte le pubblicazioni della biblioteca saranno curate da volontari. L'obiettivo
 
 ## Dona SATs ⚡️
 
-Sostieni i nostri sforzi donando al seguente Lightning address
+Sostieni i nostri sforzi donando al seguente Lightning address: 0x835afe8aef2989f0@ln.tips
 
 
 ## Come contribuire 🤝
