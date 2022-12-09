@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://bibliotecabitcoin.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -10,8 +10,10 @@ rssLimit = 10
 
 # Multilingual
 defaultContentLanguage = "en"
-disableLanguages = ["de", "nl"]
 # defaultContentLanguageInSubdir = true
+
+[params]
+mainSections = ["satoshi", "cypherpunk", "bitcoin"]
 
 # add redirects/headers
 [outputs]
