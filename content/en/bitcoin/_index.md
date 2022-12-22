@@ -10,3 +10,6 @@ draft: false
         <a class="stretched-link" href="/bitcoin/bips">Bitcoin Improvement Proposals, BIPs &rarr;</a>
     </div>
 </div>
+
+<br>
+Ci stiamo lavorando...
