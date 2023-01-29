@@ -5,5 +5,11 @@ date: 2022-10-11T19:50:28+02:00
 draft: false
 weight: 400
 ---
-<br>
-Ci stiamo lavorando...
+
+<div class="card-list">
+    <div class="card my-3">
+        <div class="card-body">
+            <a class="stretched-link" href="/cypherpunk/timothy-may/the-crypto-anarchist-manifesto">The Crypto Anarchist Manifesto &rarr; </a>
+        </div>
+    </div>
+</div>
