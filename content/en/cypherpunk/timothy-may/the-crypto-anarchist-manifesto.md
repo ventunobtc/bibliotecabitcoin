@@ -5,7 +5,7 @@ draft: false
 contributors: [LeoSpyke]
 images: []
 ---
-[Fonte originale](https://nakamotoinstitute.org/crypto-anarchist-manifesto/)
+[Fonte originale](https://activism.net/cypherpunk/crypto-anarchy.html)
 
 Uno spettro si aggira per il mondo moderno: lo spettro della cripto-anarchia.
 
