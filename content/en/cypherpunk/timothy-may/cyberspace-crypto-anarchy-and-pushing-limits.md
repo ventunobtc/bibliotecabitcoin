@@ -6,7 +6,7 @@ draft: false
 weight: 430
 images: []
 categories: []
-contributors: []
+contributors: ["21MillionClub"]
 ---
 
 [Originale](https://groups.csail.mit.edu/mac/classes/6.805/articles/crypto/cypherpunks/may-pushing-limits.txt) - 3 Aprile, 1994

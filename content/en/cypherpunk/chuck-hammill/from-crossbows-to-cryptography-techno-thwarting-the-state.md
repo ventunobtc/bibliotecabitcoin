@@ -6,7 +6,7 @@ draft: false
 weight: 200
 images: []
 categories: []
-contributors: []
+contributors: ["21MillionClub"]
 ---
 
 [Originale](http://t0.or.at/crypto/crossbow.htm) - Novembre 1987

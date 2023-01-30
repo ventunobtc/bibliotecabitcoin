@@ -6,7 +6,7 @@ draft: false
 weight: 300
 images: []
 categories: []
-contributors: []
+contributors: ["cyphersats", "brandosari"]
 ---
 
 [Originale](https://bitcointalk.org/index.php?topic=155054.msg1643833#msg1643833) - 19 Marzo, 2013

@@ -6,7 +6,7 @@ draft: false
 weight: 500
 images: []
 categories: []
-contributors: []
+contributors: ["cyphersats", "brandosari"]
 ---
 
 [Originale](https://web.archive.org/web/20011102030812/http://szabo.best.vwh.net:80/authorities.html) - 1997

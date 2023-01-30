@@ -6,7 +6,7 @@ draft: false
 weight: 310
 images: []
 categories: []
-contributors: []
+contributors: ["21MillionClub"]
 ---
 
 [Originale](https://fennetic.net/irc/finney.org/~hal/dig_cash_priv.html) - 19 Agosto, 1993

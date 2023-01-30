@@ -6,7 +6,7 @@ draft: false
 weight: 330
 images: []
 categories: []
-contributors: []
+contributors: ["cyphersats", "brandosari"]
 ---
 
 [Originale](https://cryptome.org/rpow.htm) - 15 Agosto, 2004

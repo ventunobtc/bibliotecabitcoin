@@ -6,7 +6,7 @@ draft: false
 weight: 410
 images: []
 categories: []
-contributors: [LeoSpyke]
+contributors: ["LeoSpyke"]
 ---
 
 [Fonte originale](https://activism.net/cypherpunk/crypto-anarchy.html) - 1988

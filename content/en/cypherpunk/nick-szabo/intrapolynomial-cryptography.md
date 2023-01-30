@@ -6,7 +6,7 @@ draft: false
 weight: 510
 images: []
 categories: []
-contributors: []
+contributors: ["cyphersats","brandosari"]
 ---
 
 [Originale](https://web.archive.org/web/20040411230036/http:/szabo.best.vwh.net/intrapoly.html) - 1999
