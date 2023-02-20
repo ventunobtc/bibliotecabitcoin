@@ -1,6 +1,6 @@
 ---
 title: "Distributing Authorities and Verifying Their Claims"
-description: "- 1997"
+description: "Nick Szabo - 1997"
 date: 2023-01-29T15:17:17+01:00
 draft: false
 weight: 500
@@ -15,9 +15,9 @@ I sistemi di reputazione devono essere basati sui fatti piuttosto che su mere op
 
 È da tempo riconosciuto, sia negli affari che in politica, che le autorità godono di più affidabilità quando sono distribuite. Considerate i seguenti "protocolli" grezzi ma efficaci:
 
-[Separazione dei poteri](https://avalon.law.yale.edu/18th_century/fed47.asp): l’autorità politica è divisa in vari rami, ognuno dei quali è responsabile solo di alcuni aspetti dell'autorità stessa (ad esempio: un ramo approva le leggi, un altro le fa rispettare).
+[*Separazione dei poteri*](https://avalon.law.yale.edu/18th_century/fed47.asp): l’autorità politica è divisa in vari rami, ognuno dei quali è responsabile solo di alcuni aspetti dell'autorità stessa (ad esempio: un ramo approva le leggi, un altro le fa rispettare).
 
-[Segregazione dei compiti](https://web.archive.org/web/19990427063637/http://www.bus.orst.edu/faculty/brownc/lectures/controls/control1.htm): in una grande azienda, le transazioni sono suddivise in modo che nessuna persona possa commettere frodi. Lo chiamo "principio della required conspiracy" [^1]. Ad esempio, le funzioni di magazzino/consegna, vendita, e ricezione dei pagamenti sono svolte da soggetti diversi, con una politica che prevede che ognuno di essi riferisca ogni transazione a un quarto soggetto, la contabilità. Qualsiasi attività segnalata (ad esempio, consegna senza ricezione del pagamento) indica una potenziale frode (ad esempio: è stata effettuata una consegna a un cliente e il pagamento è stato intascato invece di essere versato nella cassa aziendale). La segregazione dei compiti è lo strumento preferito di chi svolge auditing. Quando è assente, quest’ultimo grida "fallo", proprio come un buon ingegnere reagirebbe alla scoperta di un single point of failure [^2]. Molti sistemi crittografici sono, giustamente, falliti dal punto di vista commerciale perché si basavano sulla fiducia in un'unica entità piuttosto che sulla segregazione delle funzioni in modo da creare cospirazioni.
+[*Segregazione dei compiti*](https://web.archive.org/web/19990427063637/http://www.bus.orst.edu/faculty/brownc/lectures/controls/control1.htm): in una grande azienda, le transazioni sono suddivise in modo che nessuna persona possa commettere frodi. Lo chiamo "principio della required conspiracy" [^1]. Ad esempio, le funzioni di magazzino/consegna, vendita, e ricezione dei pagamenti sono svolte da soggetti diversi, con una politica che prevede che ognuno di essi riferisca ogni transazione a un quarto soggetto, la contabilità. Qualsiasi attività segnalata (ad esempio, consegna senza ricezione del pagamento) indica una potenziale frode (ad esempio: è stata effettuata una consegna a un cliente e il pagamento è stato intascato invece di essere versato nella cassa aziendale). La segregazione dei compiti è lo strumento preferito di chi svolge auditing. Quando è assente, quest’ultimo grida "fallo", proprio come un buon ingegnere reagirebbe alla scoperta di un single point of failure [^2]. Molti sistemi crittografici sono, giustamente, falliti dal punto di vista commerciale perché si basavano sulla fiducia in un'unica entità piuttosto che sulla segregazione delle funzioni in modo da creare cospirazioni.
 
 L'ironia della sorte è che con la crittografia possiamo migliorare notevolmente le tecniche tradizionali di auditing (segregazione dei compiti, controlli incrociati delle transazioni con i libri contabili delle controparti e così via). Citerò brevemente tre meccanismi:
 
@@ -47,9 +47,9 @@ Publius (James A. Madison), Federalist No. 47 — Federalist No. 48 — [These D
 
 Douglas Stinson, [Bibliography on Secret Sharing Schemes](https://web.archive.org/web/19990423083549/http://cacr.math.uwaterloo.ca/%7Edstinson/ssbib.html)
 
-Surety Technologies, “Digital Fingerprints”
+Surety Technologies, [Digital Fingerprints](https://web.archive.org/web/19971007064216/http://www.surety.com/howfiles/detail3.html)
 
-Nick Szabo, “Negative Reputation Systems”
+Nick Szabo, Negative Reputation Systems
 
 
 [^1]: La necessità di avere sempre una cospirazione in atto per mantenere l’ordine tra le diverse parti. N.d.T.

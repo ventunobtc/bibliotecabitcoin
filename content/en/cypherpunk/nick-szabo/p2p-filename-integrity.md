@@ -1,12 +1,12 @@
 ---
 title: "P2P Filename Integrity"
-description: "- 2005"
+description: "Nick Szabo - 2005"
 date: 2022-10-11T19:50:58+02:00
 draft: false
 weight: 520
 images: []
 categories: []
-contributors: []
+contributors: ["cyphersats", "brandosari"]
 ---
 
 [Originale](https://web.archive.org/web/20050328092206/http://szabo.best.vwh.net:80/nameintegrity.html) - 2005

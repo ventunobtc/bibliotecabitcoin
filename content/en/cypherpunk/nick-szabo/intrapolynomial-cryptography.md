@@ -1,12 +1,12 @@
 ---
 title: "Intrapolynomial Cryptography"
-descriptio: "- 1999"
+descriptio: "Nick Szabo - 1999"
 date: 2023-01-29T15:18:32+01:00
 draft: false
 weight: 510
 images: []
 categories: []
-contributors: ["cyphersats","brandosari"]
+contributors: ["cyphersats", "brandosari"]
 ---
 
 [Originale](https://web.archive.org/web/20040411230036/http:/szabo.best.vwh.net/intrapoly.html) - 1999
@@ -27,8 +27,8 @@ In altre parole, non esiste un algoritmo più veloce di q(n,k)p(n) che possa inv
 È altrettanto possibile definire degli average-case, best-case e worst-case per le funzioni benchmark di grado k, in modo analogo alle funzioni unidirezionali. Domanda aperta (analoga alla questione sull’esistenza di funzioni unidirezionali nella crittografia superpolinomiale): è possibile dimostrare la condizione (3) come limite inferiore e superiore per una determinata funzione e k >= 1 su qualche modello di macchina realizzabile, ad esempio RAM-log?
 
 Gli strong e average-case sono più adatti alle applicazioni relative alla crittografia. Purtroppo per questi scopi sarà inoltre necessario avere: 
-1.	Un elenco completo di tutti i modelli di macchine fisicamente realizzabili, nel senso che qualsiasi macchina di questo tipo possa essere simulata con un overhead molto piccolo, ad esempio costante oppure O(log(n)), da qualche modello presente nell'elenco
-2.	Di dimostrare i limiti inferiori su una funzione benchmark per tutti i modelli dell'elenco
+1.	un elenco completo di tutti i modelli di macchine fisicamente realizzabili, nel senso che qualsiasi macchina di questo tipo possa essere simulata con un overhead molto piccolo, ad esempio costante oppure O(log(n)), da qualche modello presente nell'elenco
+2.	di dimostrare i limiti inferiori su una funzione benchmark per tutti i modelli dell'elenco
 
 Poiché si tratta di un'operazione lunga e stancante, si spera che nella pratica si possa farla franca con un breve elenco comprensivo di tutte le architetture verosimilmente implementabili. Questo potrebbe funzionare quando, ad esempio, la totale esposizione necessaria alla rottura di un protocollo è inferiore ai costi di ricerca e sviluppo per la progettazione e costruzione di una nuova architettura per sconfiggerlo. La crittoanalisi comprenderebbe la scoperta delle architetture ottimali per rompere un cifrario intrapolinomiale.
 

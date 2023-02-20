@@ -1,6 +1,6 @@
 ---
 title: "A Cypherpunk's Manifesto"
-description: "Manifesto del movimento Cypherpunk - 9 Marzo, 1993"
+description: "Manifesto del movimento Cypherpunk di Eric Hughes - 9 Marzo, 1993"
 date: 2023-01-29T17:50:44+01:00
 draft: false
 weight: 100
