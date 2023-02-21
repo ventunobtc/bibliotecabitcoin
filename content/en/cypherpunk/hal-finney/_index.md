@@ -16,7 +16,7 @@ weight: 300
 <div class="card-list">
     <div class="card my-3">
         <div class="card-body">
-            <a class="stretched-link" href="/cypherpunk/hal-finney/digital-cash-&-privacy">Digital Cash and Privacy &rarr;</a>
+            <a class="stretched-link" href="/cypherpunk/hal-finney/digital-cash-and-privacy">Digital Cash & Privacy &rarr;</a>
         </div>
     </div>
 </div>
