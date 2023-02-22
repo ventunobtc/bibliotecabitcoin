@@ -1,11 +1,15 @@
 ---
-title: "The Crypto Anarchist Manifesto"
+title: "The Crypto-Anarchist Manifesto"
+description: "Manifesto cripto-anarchico di Timothy May - 3 Aprile, 1994"
 date: 2023-01-29T12:30:46+01:00
 draft: false
-contributors: [LeoSpyke]
+weight: 410
 images: []
+categories: []
+contributors: ["LeoSpyke"]
 ---
-[Fonte originale](https://activism.net/cypherpunk/crypto-anarchy.html)
+
+[Fonte originale](https://activism.net/cypherpunk/crypto-anarchy.html) - 1988
 
 Uno spettro si aggira per il mondo moderno: lo spettro della cripto-anarchia.
 

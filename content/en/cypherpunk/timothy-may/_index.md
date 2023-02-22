@@ -13,3 +13,17 @@ weight: 400
         </div>
     </div>
 </div>
+<div class="card-list">
+    <div class="card my-3">
+        <div class="card-body">
+            <a class="stretched-link" href="/cypherpunk/timothy-may/libertaria-in-cyberspace">Libertaria in Cyberspace &rarr; </a>
+        </div>
+    </div>
+</div>
+<div class="card-list">
+    <div class="card my-3">
+        <div class="card-body">
+            <a class="stretched-link" href="/cypherpunk/timothy-may/cyberspace-crypto-anarchy-and-pushing-limits">Cyberspace crypto anarchy and pushing limits &rarr; </a>
+        </div>
+    </div>
+</div>
