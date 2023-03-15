@@ -1,9 +1,9 @@
 ---
 title: "Politics vs Technology"
-description: "La crittografia sarà sufficiente a garantire la privacy? O continuerà a essere necessaria una lotta politica? - 2 Gennaio, 1994"
+description: "Hal Finney- 2 Gennaio, 1994"
 date: 2023-01-29T17:54:11+01:00
 draft: false
-weight: 320
+weight: 355
 images: []
 categories: []
 contributors: ["21MillionClub", "cyphersats"]

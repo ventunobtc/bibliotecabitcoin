@@ -1,9 +1,9 @@
 ---
 title: "Digital Cash & Privacy"
-description: "Il contante digitale potrebbe svolgere un ruolo importante nella protezione della privacy in un mondo in cui sempre più transazioni avverranno per via elettronica - 19 Agosto, 1993"
+description: "Hal Finney - 19 Agosto, 1993"
 date: 2023-01-29T17:53:04+01:00
 draft: false
-weight: 310
+weight: 335
 images: []
 categories: []
 contributors: ["21MillionClub", "cyphersats"]
@@ -37,6 +37,6 @@ Con il sistema del contante digitale, questo potrebbe essere un problema minore.
 
 Non so se questo sistema possa essere utilizzato per sostenere azioni illegali, evasione fiscale, gioco d'azzardo o altro. Non è questo lo scopo della proposta. Offre però la prospettiva di migliorare la privacy e la sicurezza personale, in un contesto che potrebbe anche essere legale, e questo non è male.
 
-Hal Finney
-
-hal@rain.org
+Hal Finney<br>
+hal@rain.org<br>
+[Hal Finney Home Page](hal-finney-home-page.md)

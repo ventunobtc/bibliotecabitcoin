@@ -3,7 +3,7 @@ title: "Bitcoin and Me"
 description: "Post di Bitcointalk sugli ultimi anni di vita di Hal Finney - 19 Marzo, 2013"
 date: 2023-01-29T15:31:09+01:00
 draft: false
-weight: 300
+weight: 390
 images: []
 categories: []
 contributors: ["cyphersats", "brandosari"]
