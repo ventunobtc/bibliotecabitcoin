@@ -203,4 +203,4 @@ Ci sono anche altre chiamate in mpilib.c che non ho documentato sopra. Sono per 
 
 Hal Finney<br>
 hal@rain.org<br>
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)

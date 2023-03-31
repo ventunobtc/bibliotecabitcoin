@@ -67,4 +67,4 @@ Abstract:<br>
     Una macchina per la firma digitale fornisce un metodo semplificato per la formazione e la verifica di una firma allegata a un messaggio digitale. Il mittente trasmette una firma con le consuete chiavi e con le voci della tabella di convalida che corrispondono alle chiavi non inviate e con la codifica compressa della tabella di convalida successiva. Il destinatario utilizza la codifica compressa della tabella di convalida successiva per formare le voci della tabella di convalida dalle chiavi di firma, in modo da avere una tabella di convalida completa. Questa tabella di convalida viene compressa e confrontata con la codifica compressa ricevuta dal mittente in un messaggio precedente.
 </ul>
 
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)

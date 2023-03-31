@@ -27,4 +27,4 @@ Vorrei che Chaum e il suo gruppo smettessero di dirigere i loro sforzi verso pro
 
 Hal Finney<br>
 hal@rain.org<br>
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)

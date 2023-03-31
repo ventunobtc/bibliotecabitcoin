@@ -35,4 +35,4 @@ Senza questo, credo che continueremo ad avere problemi con PGP che non è in gra
 
 Hal Finney<br>
 hal@rain.org<br>
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)

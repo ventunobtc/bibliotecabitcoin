@@ -34,4 +34,4 @@ Prevediamo che le reti informatiche giocheranno un ruolo sempre più importante 
 
 Hal Finney<br>
 hal@rain.org<br>
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)
