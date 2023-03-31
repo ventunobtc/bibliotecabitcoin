@@ -19,7 +19,7 @@ Ho appena inviato via ftp, stampato e letto il documento citato da Derek:
 
 Non penso sia ben congegnata come molte altre proposte concorrenti di contanti digitali. Hanno un modello incredibilmente semplicistico e i loro "protocolli" sono del tipo: A invia alla banca della cartamoneta e B invia ad A del contante elettronico in cambio.
 
-Non si occupano nemmeno dell'accecamento del contante. Ogni pezzo di contante ha un numero di serie unico, noto al fornitore di valuta. Questo consentirebbe ovviamente di associare le monete prelevate e quelle depositate.
+Non si occupano nemmeno del _blinding_[^1] del contante. Ogni pezzo di contante ha un numero di serie unico, noto al fornitore di valuta. Questo consentirebbe ovviamente di associare le monete prelevate e quelle depositate.
 
 "In particolare, nel momento in cui un cliente acquista monete da un server di valuta tramite assegno, o incassa monete, è possibile per il server di valuta registrare quali monete sono state emesse per un particolare cliente. Ci si aspetta che i server valutari non lo facciano, ed è probabile che l'accordo con i clienti lo precluda espressamente".
 
@@ -29,3 +29,5 @@ Questi ragazzi sembrano aver letto il lavoro sul campo (lo citano) ma non sembra
 
 Hal Finney<br>
 hal@rain.org
+
+[^1]: il blinding, o Chaumian Blinding, è una tecnica che consente di effettuare una transazione senza rivelare i partecipanti, l'ora o il contenuto di essa, nemmeno alla figura centralizzata che la deve approvare. É stata sviluppata dal crittografo americano David Lee Chaum e pubblicata nel suo documento intitolato "Blind Signature for Untraceable Payments".

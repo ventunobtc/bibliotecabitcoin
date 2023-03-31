@@ -15,19 +15,19 @@ E se si potesse guadagnare gestendo un remailer?
 
 Al momento, la maggior parte degli operatori di remailer opera per altruismo. Questo è positivo per molti aspetti, ma ha i suoi problemi, come hanno dimostrato gli eventi recenti:
 
-- mancanza di motivazione a mantenere in funzione i remailer di fronte alle problemi e ai possibili rischi legali
-- facilità di attacchi di spam da parte di utenti malintenzionati
-- mancanza di incentivi per un servizio di remailing di qualità commerciale.
+  - mancanza di motivazione a mantenere in funzione i remailer di fronte ai problemi e ai possibili rischi legali
+  - facilità di attacchi di spam da parte di utenti malintenzionati
+  - mancanza di incentivi per un servizio di remailing di qualità commerciale.
 
-Sono sicuro che tutti noi possiamo pensare ad altro. So che sarebbe molto più facile giustificare il fatto di continuare a gestire il remailer per me stesso se portasse qualche dollaro al mese.
+Sono sicuro che tutti noi possiamo trovarne altri. So che sarebbe molto più facile giustificare il fatto di continuare a gestire il remailer per me stesso se portasse qualche dollaro al mese.
 
 Credo che siano stati fatti alcuni esperimenti di remailer a pagamento. Sameer, credo, sta facendo pagare alcuni servizi, anche se forse era solo per gli indirizzi di ritorno anonimi. Molto tempo fa Karl Barrus aveva un servizio che richiedeva "francobolli digitali" pre-emessi, ma non credo che molti lo usassero.
 
 I tempi potrebbero essere maturi per considerare la questione più seriamente. Diversi fattori si stanno unendo:
 
-- alcuni sforzi per la standardizzazione dei comandi dei remailer e la cooperazione degli operatori (ad esempio questa lista)
-- un uso più ampio di script e programmi di utilità per aiutare le persone a usare i remailer
-- diversi sistemi concorrenti di denaro reale concorrenti che sono stati messi online proprio nell'ultimo mese o giù di lì che che permettono di essere pagati per le cose in rete
+  - alcuni sforzi per la standardizzazione dei comandi dei remailer e la cooperazione degli operatori (ad esempio questa lista)
+  - un uso più ampio di script e programmi di utilità per aiutare le persone a usare i remailer
+  - diversi sistemi concorrenti basati su denaro reale che sono stati messi online proprio nell'ultimo mese o giù di lì che ti permettono di essere pagato per qualcosa in rete
 
 Per approfondire questi aspetti:
 
@@ -75,4 +75,4 @@ So che sono molte informazioni da analizzare, ma soprattutto voglio che le perso
 
 Hal Finney<br>
 hal@rain.org<br>
-[Hal Finney Home Page](hal-finney-home-page.md)
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)
