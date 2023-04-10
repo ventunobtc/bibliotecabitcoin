@@ -1,6 +1,6 @@
 ---
 title: "Cyberspace Crypto Anarchy and Pushing Limits"
-descriptio: "Timothy May - 3 Aprile, 1994"
+description: "Timothy May - 3 Aprile, 1994"
 date: 2023-01-29T17:55:46+01:00
 draft: false
 weight: 430

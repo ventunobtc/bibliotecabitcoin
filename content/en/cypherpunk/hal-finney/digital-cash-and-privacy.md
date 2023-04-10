@@ -1,9 +1,9 @@
 ---
 title: "Digital Cash & Privacy"
-description: "Il contante digitale potrebbe svolgere un ruolo importante nella protezione della privacy in un mondo in cui sempre più transazioni avverranno per via elettronica - 19 Agosto, 1993"
+description: "Hal Finney - 19 Agosto, 1993"
 date: 2023-01-29T17:53:04+01:00
 draft: false
-weight: 310
+weight: 335
 images: []
 categories: []
 contributors: ["21MillionClub", "cyphersats"]
@@ -13,7 +13,7 @@ contributors: ["21MillionClub", "cyphersats"]
 
 Sono d'accordo con Anonymous che ci sono problemi con l'uso effettivo del contante digitale nel breve termine. Ma dipende in parte da quale problema si sta cercando di risolvere.
 
-Una mia preoccupazione è che il passaggio ai pagamenti elettronici diminuisca la privacy personale rendendo più facile registrare le transazioni. Si potrebbero creare dei dossier che traccerebbero i modelli di spesa di ognuno di noi.
+Una mia preoccupazione è che il passaggio ai pagamenti elettronici diminuisca la privacy personale rendendo più facile registrare le transazioni. Si potrebbero creare dei dossier che traccerebbero le abitudini di spesa di ognuno di noi.
 
 Già oggi, quando ordino qualcosa al telefono o per via elettronica utilizzando la mia carta Visa, viene registrato esattamente quanto ho speso e dove l'ho speso. Con il passare del tempo, più transazioni potrebbero essere effettuate in questo modo, e il risultato netto potrebbe essere una grande perdita di privacy.
 
@@ -37,6 +37,6 @@ Con il sistema del contante digitale, questo potrebbe essere un problema minore.
 
 Non so se questo sistema possa essere utilizzato per sostenere azioni illegali, evasione fiscale, gioco d'azzardo o altro. Non è questo lo scopo della proposta. Offre però la prospettiva di migliorare la privacy e la sicurezza personale, in un contesto che potrebbe anche essere legale, e questo non è male.
 
-Hal Finney
-
-hal@rain.org
+Hal Finney<br>
+hal@rain.org<br>
+[Hal Finney Home Page](/cypherpunk/hal-finney/hal-finney-home-page)
