@@ -9,7 +9,7 @@ categories: []
 contributors: ["cyphersats"]
 ---
 
-[Orinale](https://web.archive.org/web/20041206185232/http://finney.org/~hal/anti_observers.html) - 2 Agosto, 1993
+[Originale](https://web.archive.org/web/20041206185232/http://finney.org/~hal/anti_observers.html) - 2 Agosto, 1993
 
 Molte delle nostre discussioni sono influenzate dalle idee di David Chaum. Lui è stato il pioniere di una tecnologia in grado di proteggere la privacy individuale pur consentendo tipi molto flessibili di credenziali e garanzie. Ha anche svolto un ruolo importante nelle varie proposte per il contante digitale.
 

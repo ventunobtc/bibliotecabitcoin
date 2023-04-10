@@ -56,10 +56,10 @@ Il programma di crittografia a chiave pubblica PGP di Phil Zimmermann ha suscita
 
 [Problems with Observers](/cypherpunk/hal-finney/down-with-observers)<br>
     Le recenti proposte di David Chaum e di altri ricercatori includono la nozione di un chip "observer" che risiede nel "portafoglio" digitale e si assicura che non si verifichino doppie spese. Questo saggio critica questo approccio.
-    
+
 [The Beauty of Ecash](/cypherpunk/hal-finney/the-beauty-of-ecash)<br>
     Un saggio un po' faceto sulla gioia di collezionare denaro elettronico. Ammirate la bellezza unica di ogni banconota digitale!
-    
+
 [Criticism of NetCash](/cypherpunk/hal-finney/first-reaction-to-medvinsky-netcash-proposal)<br>
     Un gruppo che collabora con USC/ISI ha realizzato una proposta di contante digitale chiamata NetCash. Descrivo alcuni problemi fondamentali del loro sistema.
 
@@ -68,7 +68,7 @@ Il programma di crittografia a chiave pubblica PGP di Phil Zimmermann ha suscita
 
 ### Remailer anonimi
 
-Un tempo gestivo due remailer anonimi. (Questi articoli discutono alcune questioni tecniche e sociali sollevate da questi servizi controversi.
+Un tempo gestivo due remailer anonimi. (Per ulteriori informazioni e per un elenco di remailer, vedere [qui](https://web.archive.org/web/20030418122317/http://www.levien.com/remailers.html)). Questi articoli discutono alcune questioni tecniche e sociali sollevate da questi servizi controversi.
 
 [Why Remailers I](/cypherpunk/hal-finney/why-remailers-i)<br>
     Uno dei primi articoli che ho scritto per spiegare come mi sono interessato in generale alla crittografia e in particolare ai remailer. Qual è il ruolo dei remailer anonimi in una società che utilizza la crittografia per proteggere la privacy?

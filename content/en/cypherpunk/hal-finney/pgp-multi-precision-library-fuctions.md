@@ -85,7 +85,7 @@ Assicuratevi di non commettere l'errore di dichiarare le variabili locali e glob
 La maggior parte delle funzioni della libreria sono concettualmente semplici. L'unica eccezione è la moltiplicazione modulare. Questa esegue la funzione A\*B mod M. PGP richiede che ciò avvenga tramite due chiamate. Prima si indica il modulo M con la chiamata stage_modulus. Poi si esegue la moltiplicazione con mp_modmult. Questo è il codice per fare rslt = arg1*arg2 mod m:
 
     unitarr rslt, arg1, arg2, m;
-    stadio_modulo (m);
+    stage_modulus (m);
     mp_modmult(rslt, arg1, arg2);
 
 Se si esegue una serie di moltiplicazioni con lo stesso modulo, si può chiamare stage_modulus una sola volta e poi chiamare mp_modmult ripetutamente. Si tenga presente che mp_modexp chiama internamente stage_modulus, quindi questa funzione sovrascriverà il valore del modulo salvato.
@@ -99,63 +99,63 @@ Ecco alcune utili funzioni mpilib di PGP e cosa fanno. I numeri MP sono r, r1, r
 ### Funzioni MP non modulari
 
     mp_move(r1,r2)
-        r1 = r2 
+        r1 = r2
     mp_add(r1,r2)
-        r1 += r2 
+        r1 += r2
     mp_sub(r1,r2)
-        r1 -= r2 
+        r1 -= r2
     mp_compare(r1,r2)
-        -1,0,o 1 a seconda di (r1< r2),(r1=r2),(r1> r2) 
+        -1,0,o 1 a seconda di (r1< r2),(r1=r2),(r1> r2)
     mp_mult(r1,r2,r3)
-        r1 = r2 * r3; 
+        r1 = r2 * r3;
     mp_udiv(rem,rquot,rdend,rdor)
-        unsigned rdend/rdor;rem=rimedio,rquot=quoziente 
+        unsigned rdend/rdor;rem=rimedio,rquot=quoziente
     mp_div(rem,rquot,rdend,rdor)
-        signed rdend/rdor; rem=rimedio, rquot=quoziente 
+        signed rdend/rdor; rem=rimedio, rquot=quoziente
     mp_mod(rem,rdend,rdor)
-        rem = rdend % rdor (unsigned) 
+        rem = rdend % rdor (unsigned)
     mp_abs(r)
-        r = valore assoluto di r 
+        r = valore assoluto di r
     mp_inc(r)
-        r += 1 
+        r += 1
     mp_dec(r)
-        r -= 1 
+        r -= 1
     mp_neg(r)
-        r = -r 
+        r = -r
     mp_square(r1,r2)
-        r1 = r2 * r2 
+        r1 = r2 * r2
     msub(r,r1)
         se (r> =r1) r -= r1
 
 ### Funzioni mp modulari
 
-    modulo_stadio(rm)
-        imposta rm come modulo per mp_modmult 
+    stage_modulus(rm)
+        imposta rm come modulo per mp_modmult
     mp_modmult(rslt,r1,r2)
-        rslt = r1 * r2 mod valore di stage_modulus 
+        rslt = r1 * r2 mod valore di stage_modulus
     mp_modsquare(r1,r2)
-        r1 = r2 * r2 mod valore del modulo_stadio 
+        r1 = r2 * r2 mod valore del modulo_stadio
     mp_modexp(rslt,r1,r2,rm)
-        rslt = (r1 alla potenza r2) mod rm 
+        rslt = (r1 alla potenza r2) mod rm
 
 ### Funzioni di interfaccia MP/Integer
 
     mp_init(r,i)
-        valore mp r = valore intero i 
+        valore mp r = valore intero i
     mp_burn(r)
-        r = 0 (per cancellare i dati sensibili in memoria) 
+        r = 0 (per cancellare i dati sensibili in memoria)
     testeq(r,i)
-        Vero se il valore mp r == valore intero i 
+        Vero se il valore mp r == valore intero i
     testne(r,i)
-        Vero se il valore mp r = valore intero i 
+        Vero se il valore mp r = valore intero i
     testge(r,i)
-        Vero se il valore mp r > = valore intero i 
+        Vero se il valore mp r > = valore intero i
     testle(r,i)
-        Vero se il valore mp r < = valore intero i 
+        Vero se il valore mp r < = valore intero i
     significatività(r)
-        restituisce il numero di unità significative in r 
+        restituisce il numero di unità significative in r
     mp_shortdiv(rquot,rdend,i)
-        rdend/i; rquot=quoziente, restituisce il resto int 
+        rdend/i; rquot=quoziente, restituisce il resto int
     mp_shortmod(rdend,i)
         restituisce rdend % i (senza segno)
 
@@ -166,17 +166,17 @@ Il modulo PGP mpiio.c contiene alcune routine per l'I/O dei valori mp. Questo mo
 Per accedere alle funzioni di I/O più generali in mpiio.c è necessario compilarlo con -DDEBUG. In questo modo sarà possibile chiamare:
 
     str2reg(r,str)
-        Converte la stringa str nel valore mp r 
+        Converte la stringa str nel valore mp r
 
 La stringa passata a str2reg viene ritenuta essere in formato decimale. Per passare una stringa esadecimale deve terminare in 'h'; le stringhe binarie devono terminare in 'b' e quelle ottali in 'o'. Le stringhe decimali possono terminare facoltativamente con '.' (questi caratteri di terminazione possono essere aggiunti da un passaggio prima che str2reg venga chiamato, se non si vuole richiederli all'utente o al file).
 
     display_in_base(str,r,irad)
-        Visualizza la stringa r nella base irad, preceduta da str 
+        Visualizza la stringa r nella base irad, preceduta da str
 
 Questa funzione stampa il valore mp r su standard out, utilizzando la base irad. La precederà dalla stringa str.
 
     mp_display(str,r)
-        Visualizza la stringa r in esadecimale, preceduta da str 
+        Visualizza la stringa r in esadecimale, preceduta da str
 
 Questa funzione visualizza sempre in esadecimale ed è un po' più veloce di display_in_base.
 
@@ -187,15 +187,15 @@ Una funzione mancante è quella per convertire un valore mp in una stringa in me
 Il modulo genprime.c contiene diverse funzioni mp utili. Sfortunatamente, dato che l'obiettivo di questo modulo è la generazione di chiavi casuali PGP, ha collegamenti ad altre parti di PGP, come la generazione di numeri casuali. Probabilmente è meglio estrarre le routine sorgenti da questo modulo in modo selettivo. Tra le routine che potrebbero essere di uso generale ci sono:
 
     mp_gcd(rslt,r1,r2)
-        rslt = massimo comune divisore di r1 e r2 
+        rslt = massimo comune divisore di r1 e r2
     mp_inv(rslt,r1,r2)
-        Calcolo di rslt tale che rslt*r1 mod r2 sia 1 
+        Calcolo di rslt tale che rslt*r1 mod r2 sia 1
     nextprime(r)
-        Trova il prossimo primo superiore a r, restituito in r 
+        Trova il prossimo primo superiore a r, restituito in r
     slowtest(r)
-        Vero se r è un primo probabile 
+        Vero se r è un primo probabile
     primetest(r)
-        Setaccia poi slowtest di r, vero se primo probabile 
+        Setaccia poi slowtest di r, vero se primo probabile
 
 nextprime è veloce e utilizza una combinazione di setacci e test di primalità probabilistici. È quello usato da PGP per la generazione della chiave RSA. slowtest è usato da nextprime; applica il test di Fermat con i primi quattro primi come valori di prova. primetest verifica prima la divisibilità di r rispetto a un elenco di piccoli primi, poi chiama slowtest per verificarlo.
 

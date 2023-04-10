@@ -11,9 +11,9 @@ contributors: ["cyphersats"]
 
 [Originale](https://cryptome.org/rpow.htm) - 15 Agosto, 2004
 
-To: cypherpunks@al-qaeda.net
-Subject: RPOW - Reusable Proofs of Work
-Date: Sun, 15 Aug 2004 10:43:09 -0700 (PDT)
+To: cypherpunks@al-qaeda.net<br>
+Subject: RPOW - Reusable Proofs of Work<br>
+Date: Sun, 15 Aug 2004 10:43:09 -0700 (PDT)<br>
 From: hal at finney dot org ("Hal Finney")
 
 Vorrei invitare i membri di questa lista a provare il mio nuovo server basato su hashcash, [rpow.net](https://nakamotoinstitute.org/finney/rpow/index.html).

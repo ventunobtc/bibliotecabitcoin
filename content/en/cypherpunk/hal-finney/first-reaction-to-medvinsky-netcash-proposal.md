@@ -30,4 +30,4 @@ Questi ragazzi sembrano aver letto il lavoro sul campo (lo citano) ma non sembra
 Hal Finney<br>
 hal@rain.org
 
-[^1]: il blinding, o Chaumian Blinding, è una tecnica che consente di effettuare una transazione senza rivelare i partecipanti, l'ora o il contenuto di essa, nemmeno alla figura centralizzata che la deve approvare. É stata sviluppata dal crittografo americano David Lee Chaum e pubblicata nel suo documento intitolato "Blind Signature for Untraceable Payments".
+[^1]: Il blinding, o Chaumian Blinding, è una tecnica che consente di effettuare una transazione senza rivelare i partecipanti, l'ora o il contenuto di essa, nemmeno alla figura centralizzata che la deve approvare. É stata sviluppata dal crittografo americano David Lee Chaum e pubblicata nel suo documento intitolato "Blind Signature for Untraceable Payments".

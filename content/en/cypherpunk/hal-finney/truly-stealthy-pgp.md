@@ -20,7 +20,7 @@ Sia L una potenza di 256 oltre il modulo n. Per sicurezza, sia la prossima poten
 1) Scegliere una SK casuale in [0,n].
 2) crittografarlo con RSA per formare m = SK^e mod n.
 3) Scegliere un k casuale in [0,t].
-4) Calcolare la chiave cifrata "a gradini" come M = m + k*n. Questo sarà uniforme in [0,(t+1)*n] se m è uniforme in [0,n], cosa che penso sia.
+4) Calcolare la chiave cifrata "a gradini" come M = m + k\*n. Questo sarà uniforme in [0,(t+1)*n] se m è uniforme in [0,n], cosa che penso sia.
 5) se M non è in [0,L) (cioè se M >= L) allora fallisce. Le probabilità che ciò accada sono meno di 1 su 2^64, in pratica zero.
 6) Altrimenti memorizzare M come numero binario grezzo con base 256 di L byte.
 
