@@ -10,7 +10,7 @@ description = "Ho lavorato a un nuovo sistema di contante elettronico completame
 # docsVersion = "0.3"
 
 ## Open Graph
-images = []
+images = ["doks.png"]
 ogLocale = "en_US"
 domainTLD = "bibliotecabitcoin.org"
 titleHome = "Biblioteca Bitcoin"
