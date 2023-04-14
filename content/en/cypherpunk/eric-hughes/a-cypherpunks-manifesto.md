@@ -6,7 +6,7 @@ draft: false
 weight: 100
 images: []
 categories: []
-contributors: []
+contributors: ["21MillionClub"]
 ---
 
 [Originale](https://www.activism.net/cypherpunk/manifesto.html) - 9 Marzo, 1993
