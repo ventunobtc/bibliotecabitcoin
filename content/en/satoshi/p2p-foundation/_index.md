@@ -15,7 +15,7 @@ Post di Satoshi nell'organizzazione internazionale sullo studio, ricerca, docume
 <div class="card-list">
     <div class="card my-3">
         <div class="card-body">
-            <a class="stretched-link" href="/satoshi/p2p-foundation/p2p-thread-1/2009-02-11_22.27.00">Bitcoin open source implementazione di una valuta P2P &rarr;</a>
+            <a class="stretched-link" href="/satoshi/p2p-foundation/p2p-thread-1/2009-02-11_22.27.00_threadcompleto">Bitcoin open source implementazione di una valuta P2P &rarr;</a>
         </div>
     </div>
 </div>
