@@ -19,7 +19,7 @@ La libreria di PGP è abbastanza portabile e funziona su macchine big- e little-
 
 La libreria utilizza buffer di dimensioni fisse per i suoi calcoli. Ciò significa che esiste un limite massimo alla dimensione dei numeri che possono essere utilizzati. Questo tetto viene però determinato in fase di compilazione, quindi le applicazioni speciali possono creare la libreria con tetti elevati, se lo si desidera.
 
-La libreria di PGP e il suo codice sorgente in generale non sono di pubblico dominio; sono protetti da copyright di Philip Zimmermann, raggiungibile all'indirizzo < prz@acm.org> . PGP è rilasciato sotto termini di licenza che, credo, permettono l'uso del codice sorgente per scopi non commerciali. Sarebbe una buona idea parlarne con Phil prima di utilizzare il codice in qualsiasi prodotto destinato a un rilascio diffuso.
+La libreria di PGP e il suo codice sorgente in generale non sono di pubblico dominio; sono protetti da copyright di Philip Zimmermann, raggiungibile all'indirizzo <prz@acm.org>. PGP è rilasciato sotto termini di licenza che, credo, permettono l'uso del codice sorgente per scopi non commerciali. Sarebbe una buona idea parlarne con Phil prima di utilizzare il codice in qualsiasi prodotto destinato a un rilascio diffuso.
 
 ## La libreria
 
@@ -48,6 +48,7 @@ Una scelta migliore è UPTON per gli scopi di una libreria di uso generale. Se s
 ## Utilizzo della libreria
 
 Prima dell'uso, la libreria MP deve essere inizializzata. Attualmente l'unica inizializzazione necessaria è l'impostazione del valore di precisione, che indica il numero di "unità" (un'unità è tipicamente un int sulla macchina di destinazione) di lunghezza dei buffer mp a dimensione fissa. Questo viene fatto chiamando:
+
 
     set_precision (MAX_UNIT_PRECISION);
 
@@ -82,7 +83,7 @@ Assicuratevi di non commettere l'errore di dichiarare le variabili locali e glob
 
 ## Funzioni di libreria
 
-La maggior parte delle funzioni della libreria sono concettualmente semplici. L'unica eccezione è la moltiplicazione modulare. Questa esegue la funzione A\*B mod M. PGP richiede che ciò avvenga tramite due chiamate. Prima si indica il modulo M con la chiamata stage_modulus. Poi si esegue la moltiplicazione con mp_modmult. Questo è il codice per fare rslt = arg1*arg2 mod m:
+La maggior parte delle funzioni della libreria sono concettualmente semplici. L'unica eccezione è la moltiplicazione modulare. Questa esegue la funzione $A*B \mod M$. PGP richiede che ciò avvenga tramite due chiamate. Prima si indica il modulo $M$ con la chiamata stage_modulus. Poi si esegue la moltiplicazione con mp_modmult. Questo è il codice per fare $rslt=arg1 *arg2 \mod m$:
 
     unitarr rslt, arg1, arg2, m;
     stage_modulus (m);
@@ -90,11 +91,11 @@ La maggior parte delle funzioni della libreria sono concettualmente semplici. L'
 
 Se si esegue una serie di moltiplicazioni con lo stesso modulo, si può chiamare stage_modulus una sola volta e poi chiamare mp_modmult ripetutamente. Si tenga presente che mp_modexp chiama internamente stage_modulus, quindi questa funzione sovrascriverà il valore del modulo salvato.
 
-A PGP mancano alcune funzioni che ci si aspetterebbe. Non ha l'addizione e la sottrazione modulare. Queste dovrebbero sostanzialmente eseguire A+B e poi testare l'intervallo 0..(M-1) e, se fuori dall'intervallo, aggiungere o sottrarre M una volta per riportarlo nell'intervallo. Forse queste funzioni saranno aggiunte a una versione futura di PGP.
+A PGP mancano alcune funzioni che ci si aspetterebbe. Non ha l'addizione e la sottrazione modulare. Queste dovrebbero sostanzialmente eseguire $A+B$ e poi testare l'intervallo 0..(M-1) e, se fuori dall'intervallo, aggiungere o sottrarre M una volta per riportarlo nell'intervallo. Forse queste funzioni saranno aggiunte a una versione futura di PGP.
 
-Alcune funzioni mp hanno parametri che sono sia ingressi che uscite (ad esempio, mp_inc(r) incrementa r). In altri casi, invece, gli ingressi sono separati dalle uscite. In questi casi non si deve passare la stessa variabile come parametro di ingresso e di uscita. Ad esempio, non si deve eseguire mp_mult (a, a, b) per ottenere a *= b, perché a viene usata sia come parametro di ingresso che di uscita. Si dovrebbe invece eseguire mp_mult (temp, a, b) e poi mp_move (a, temp).
+Alcune funzioni mp hanno parametri che sono sia ingressi che uscite (ad esempio, mp_inc(r) incrementa $r$). In altri casi, invece, gli ingressi sono separati dalle uscite. In questi casi non si deve passare la stessa variabile come parametro di ingresso e di uscita. Ad esempio, non si deve eseguire mp_mult (a, a, b) per ottenere a*=b, perché a viene usata sia come parametro di ingresso che di uscita. Si dovrebbe invece eseguire mp_mult (temp, a, b) e poi mp_move (a, temp).
 
-Ecco alcune utili funzioni mpilib di PGP e cosa fanno. I numeri MP sono r, r1, r2, ecc.; i numeri interi non MP sono i, j, ecc.
+Ecco alcune utili funzioni mpilib di PGP e cosa fanno. I numeri MP sono $r$, $r1$, $r2$, ecc.; i numeri interi non MP sono $i$, $j$, ecc.
 
 ### Funzioni MP non modulari
 
