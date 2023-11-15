@@ -142,11 +142,7 @@ Descriviamo due varianti di questo schema di collegamento; la prima, leggermente
 In entrambe le varianti, il TSS farà uso di una _funzione hash priva di collisioni_, da indicare con $H$. Questa procedura deve essere aggiunta all'uso di funzioni hash da parte dei clienti per produrre il valore hash di ogni documento di cui si desidera avere la marcatura temporale.  
 Per essere precisi, una richiesta di marcatura temporale consiste in una stringa di bit di lunghezza $l$ $y$ (presumibilmente il valore di hash del documento) e un numero di identificazione del cliente $ID$. Useremo la notazione $\sigma(\cdot)$ per indicare la procedura di firma utilizzata dal TSS. Il TSS emette $certificati$ firmati e sequenzialmente numerati. In risposta alla richiesta $(y_n, ID_n)$ del nostro cliente, la $n-esima$ richiesta in sequenza, il TSS esegue due operazioni:
 
-1. Invia al nostro cliente il certificato firmato $s = \sigma(C_n)$, dove il certificato  
-
-$$C_n = (n, t_n, ID_n, y_n; L_n)$$
-
-è composto dal numero di sequenza $n$, dall'ora $t$, dal numero $ID$ del cliente, dal valore di hash $y_n$ della richiesta e da alcune informazioni di collegamento che provengono dal certificato precedentemente emesso: $L_n = (t_{n-1}, ID_{n-1}, y_{n-1}, H(L_{n-1}))$
+1. Invia al nostro cliente il certificato firmato $s = \sigma(C_n)$, dove il certificato  $$C_n = (n, t_n, ID_n, y_n; L_n)$$ è composto dal numero di sequenza $n$, dall'ora $t$, dal numero $ID$ del cliente, dal valore di hash $y_n$ della richiesta e da alcune informazioni di collegamento che provengono dal certificato precedentemente emesso: $L_n = (t_{n-1}, ID_{n-1}, y_{n-1}, H(L_{n-1}))$
 
 2. Quando la richiesta successiva è stata elaborata, il TSS invia al nostro cliente il numero di identificazione $ID_{n+1}$ per la richiesta successiva.
 
