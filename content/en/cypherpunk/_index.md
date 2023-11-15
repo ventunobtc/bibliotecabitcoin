@@ -40,6 +40,11 @@ Storia e pubblicazioni dei membri del movimento cypherpunk
             <a class="stretched-link" href="/cypherpunk/david-chaum">David Chaum &rarr;</a>
         </div>
     </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <a class="stretched-link" href="/cypherpunk/haber-and-stornetta">Haber And Stornetta &rarr;</a>
+        </div>
+    </div>
 </div>
 
 
