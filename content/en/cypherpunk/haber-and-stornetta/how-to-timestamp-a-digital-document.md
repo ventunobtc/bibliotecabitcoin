@@ -54,7 +54,7 @@ Una soluzione semplice, definita come "cassetta di sicurezza digitale", potrebbe
 
 ogni volta che un cliente deve marchiare temporalmente un documento, questo viene trasmesso a un servizio di marcatura temporale (N.d.T. in inglese _Time Stamping Service_, TSS"). Il servizio registra la data e l'ora in cui il documento è stato ricevuto e ne conserva una copia di sicurezza. Se l'integrità del documento del cliente viene messa in discussione, è possibile confrontarlo con la copia conservata dal TSS. Se le due copie sono identiche, questa è la prova che il documento non è stato manomesso dopo la data indicata nei registri del TSS. Questa procedura soddisfa di fatto il requisito centrale per la marcatura temporale di un documento digitale.[^1] Tuttavia, questo approccio solleva alcune problematiche:
 
-[^1]: Gli autori hanno appreso recentemente di una simile proposta da parte di Kanare [14]
+[^1]: Gli autori hanno appreso recentemente di una simile proposta da parte di Kanare <a id="r14"></a> [[14]](#l14)
 
 **Privacy** Questo metodo compromette la riservatezza del documento in due modi:  
 
@@ -85,11 +85,11 @@ che comprimono stringhe di bit di lunghezza arbitraria in stringhe di bit di lun
 
 2. data una funzione $h$, è computazionalmente impossibile trovare una coppia distinta di stringhe $x$, $x'$ che soddisfi la proprietà $h(x) = h(x')$. (L'esistenza di tale coppia è definita _collisione_.)
 
-L'importanza pratica di queste funzioni è nota da molto tempo e sono state utilizzate dai ricercatori in numerose applicazioni, si veda ad esempio [7, 15, 16]. Damgird ha dato la prima definizione formale e una prova costruttiva della loro esistenza, partendo dal presupposto che esistano permutazioni unidirezionali "claw-free" [4] (N.d.T. in italiano _senza artigli_, cioè è difficile trovare due input $x, y$ per una coppia di funzioni $f$ e $g$ tali che $f(x) = g(y)$). A tal fine, è sufficiente una qualsiasi "azione di gruppo unidirezionale" [3].
+L'importanza pratica di queste funzioni è nota da molto tempo e sono state utilizzate dai ricercatori in numerose applicazioni, si veda ad esempio <a id="r7"></a> [[7]](#l7), <a id="r15"></a> [[15]](#l15), <a id="r16"></a> [[16]](#l16). Damgird ha dato la prima definizione formale e una prova costruttiva della loro esistenza, partendo dal presupposto che esistano permutazioni unidirezionali "claw-free" <a id="r4"></a> [[4]](#l4) (N.d.T. in italiano _senza artigli_, cioè è difficile trovare due input $x, y$ per una coppia di funzioni $f$ e $g$ tali che $f(x) = g(y)$). A tal fine, è sufficiente una qualsiasi "azione di gruppo unidirezionale" <a id="r3"></a> [[3]](#l3).
 
-Naor e Yung hanno definito la nozione simile di "funzioni hash universali unidirezionali" che soddisfano, al posto della seconda condizione sopracitata, il requisito leggermente più debole che sia computazionalmente impossibile, data una stringa $x$, calcolare un'altra stringa $x' \neq x$ che soddisfi $h(x) = h(x')$ per una qualsiasi $h$ scelta casualmente. Sono stati in grado di creare tali funzioni partendo dal presupposto che esistano funzioni unidirezionali uno-a-uno [17]. Rompel ha recentemente dimostrato che tali funzioni esistono se esistono funzioni unidirezionali [20]. Per una discussione sulle differenze tra questi due tipi di funzioni hash crittografiche, si veda il paragrafo 6.3.
+Naor e Yung hanno definito la nozione simile di "funzioni hash universali unidirezionali" che soddisfano, al posto della seconda condizione sopracitata, il requisito leggermente più debole che sia computazionalmente impossibile, data una stringa $x$, calcolare un'altra stringa $x' \neq x$ che soddisfi $h(x) = h(x')$ per una qualsiasi $h$ scelta casualmente. Sono stati in grado di creare tali funzioni partendo dal presupposto che esistano funzioni unidirezionali uno-a-uno <a id="r17"></a> [[17]](#l17). Rompel ha recentemente dimostrato che tali funzioni esistono se esistono funzioni unidirezionali <a id="r20"></a> [[20]](#l20). Per una discussione sulle differenze tra questi due tipi di funzioni hash crittografiche, si veda il paragrafo 6.3.
 
-Esistono implementazioni pratiche di funzioni hash, ad esempio quella di Rivest [19], che appaiono ragionevolmente sicure.
+Esistono implementazioni pratiche di funzioni hash, ad esempio quella di Rivest <a id="r19"></a> [[19]](#l19), che appaiono ragionevolmente sicure.
 
 Utilizzeremo le funzioni hash nel seguente modo: invece di trasmettere il proprio documento $x$ al TSS, un cliente invierà il suo valore di hash $h(x) = y$. Ai fini dell'autenticazione, la marcatura temporale di $y$ è equivalente alla marcatura temporale di $x$. Questo riduce notevolmente sia il problema della larghezza di banda che quello dello spazio di memorizzazione, risolvendo anche il problema della privacy. A seconda degli obiettivi di progettazione di una possibile implementazione del sistema di marcatura temporale, può esistere un'unica funzione di hash utilizzata da tutti i clienti, o diverse funzioni di hash per i diversi clienti.
 
@@ -97,7 +97,7 @@ Per il resto di questo documento, parleremo di valori hash di marca temporale $y
 
 ### 4.2 Firma
 
-Il secondo miglioramento si avvale delle firme digitali. Informalmente, uno _schema di firma_ è un algoritmo che consente a un soggetto, il firmatario, di etichettare i messaggi in modo da identificare univocamente se stesso. Le firme digitali sono state proposte da Rabin e da Diffie e Hellman [18, 7]. Dopo una lunga serie di articoli di numerosi autori, Rompel [20] ha dimostrato che l'esistenza di funzioni unidirezionali può essere sfruttata per progettare uno schema di firma che soddisfi la nozione molto forte di sicurezza definita per la prima volta da Goldwasser, Micali e Rivest [10].
+Il secondo miglioramento si avvale delle firme digitali. Informalmente, uno _schema di firma_ è un algoritmo che consente a un soggetto, il firmatario, di etichettare i messaggi in modo da identificare univocamente se stesso. Le firme digitali sono state proposte da Rabin e da Diffie e Hellman <a id="r18"></a> [[18]](#l18), <a id="r7"></a> [[7]](#l7). Dopo una lunga serie di articoli di numerosi autori, Rompel <a id="r20"></a> [[20]](#l20) ha dimostrato che l'esistenza di funzioni unidirezionali può essere sfruttata per progettare uno schema di firma che soddisfi la nozione molto forte di sicurezza definita per la prima volta da Goldwasser, Micali e Rivest <a id="r10"></a> [[10]](#l10).
 
 Con uno schema di firma sicuro, quando il TSS riceve il valore di hash aggiunge la data e l'ora, quindi firma il documento appena prodotto e lo invia al cliente. Controllando la firma, il cliente ha la certezza che il TSS abbia effettivamente elaborato la richiesta, l'hash sia stato correttamente ricevuto e siano state inserite data e ora corrette. In questo modo si risolve il problema dell'incompetenza presente e futura del TSS e si riduce notevolmente la necessità, da parte del TSS stesso, di conservare i documenti.
 
@@ -157,7 +157,7 @@ Oltre ad alleggerire il requisito di salvataggio di tutti i certificati da parte
 
 ### 5.2 Fiducia distribuita
 
-Per questo schema, si ipotizza che esista uno schema di firma sicuro in modo che ogni utente possa firmare i messaggi, e che un sicuro generatore standard di numeri pseudocasuali $G$ sia disponibile a tutti gli utenti. Un _generatore pseudocasuale_ è un algoritmo che, a partire da una breve sequenza di bit passata in ingresso, detta _seme_ (N.d.T. in inglese _seed_), genera in uscita sequenze di bit che sono indistinguibili da quelle generate da un qualsiasi algoritmo realistico; in particolare, tali sequenze sono imprevedibili. Questi generatori sono stati studiati per la prima volta da Blum e Micali [2] e da Yao [22]; Impagliazzo, Levin e Luby hanno dimostrato che questi generatori esistono a patto che esistano funzioni unidirezionali [12].
+Per questo schema, si ipotizza che esista uno schema di firma sicuro in modo che ogni utente possa firmare i messaggi, e che un sicuro generatore standard di numeri pseudocasuali $G$ sia disponibile a tutti gli utenti. Un _generatore pseudocasuale_ è un algoritmo che, a partire da una breve sequenza di bit passata in ingresso, detta _seme_ (N.d.T. in inglese _seed_), genera in uscita sequenze di bit che sono indistinguibili da quelle generate da un qualsiasi algoritmo realistico; in particolare, tali sequenze sono imprevedibili. Questi generatori sono stati studiati per la prima volta da Blum e Micali <a id="r2"></a> [[2]](#l2) e da Yao <a id="r22"></a> [[22]](#l22); Impagliazzo, Levin e Luby hanno dimostrato che questi generatori esistono a patto che esistano funzioni unidirezionali <a id="r12"></a> [[12]](#l12).
 
 Ancora una volta, consideriamo un valore hash $y$ che il nostro cliente vorrebbe marchiare temporalmente. Egli utilizza $y$ come seme per il generatore pseudocasuale il cui risultato può essere interpretato come una $k-tupla$ di numeri di identificazione dei clienti.
 
@@ -193,15 +193,15 @@ D'altra parte, se l'evento di marcatura temporale può essere reso parte del pro
 
 ### 6.3 Considerazioni teoriche
 
-Anche se non la useremo in questa sede, suggeriamo che una precisa definizione teorica della complessità del livello più forte possibile di sicurezza della marcatura temporale potrebbe essere ricavata dalle definizioni date da Goldwasser e Micali [9], Goldwasser, Micali e Rivest [10] e Galil, Haber e Yung [8] per varie applicazioni crittografiche. Le procedure di marcatura temporale e verifica dipenderebbero tutte da un _parametro di sicurezza_ $p$. Uno schema di marcatura temporale risulterebbe _polinomialmente sicuro_ se la probabilità di successo di un avversario con limiti polinomiali che tenta di produrre una marca temporale falsa è minore di un qualsiasi polinomio in $1/p$ per $p$ sufficientemente grande.
+Anche se non la useremo in questa sede, suggeriamo che una precisa definizione teorica della complessità del livello più forte possibile di sicurezza della marcatura temporale potrebbe essere ricavata dalle definizioni date da Goldwasser e Micali <a id="r9"></a> [[9]](#l9), Goldwasser, Micali e Rivest <a id="r10"></a> [[10]](#l10) e Galil, Haber e Yung <a id="r8"></a> [[8]](#l8) per varie applicazioni crittografiche. Le procedure di marcatura temporale e verifica dipenderebbero tutte da un _parametro di sicurezza_ $p$. Uno schema di marcatura temporale risulterebbe _polinomialmente sicuro_ se la probabilità di successo di un avversario con limiti polinomiali che tenta di produrre una marca temporale falsa è minore di un qualsiasi polinomio in $1/p$ per $p$ sufficientemente grande.
 
 Sotto l'ipotesi che esistano permutazioni unidirezionali claw-free, possiamo dimostrare che il nostro schema di collegamento è polinomialmente sicuro. Se assumiamo che esista al più una frazione costante di clienti corruttibili, e assumendo anche l'esistenza di funzioni unidirezionali (e quindi l'esistenza di generatori pseudocasuali e di uno schema di firma sicuro), possiamo dimostrare che il nostro schema di fiducia distribuito è polinomialmente sicuro.
 
-Nel paragrafo 4.1 abbiamo menzionato la differenza tra le funzioni hash "senza collisioni" e quelle "universali e unidirezionali". L'esistenza di funzioni unidirezionali è sufficiente a garantire anche l'esistenza di funzioni hash universali unidirezionali. Tuttavia, per dimostrare la sicurezza dei nostri schemi di marcatura temporale, abbiamo apparentemente bisogno di una maggiore garanzia della difficoltà di produrre collisioni di hash, data dalla definizione di funzioni di hash senza collisioni. Per quanto è attualmente noto, un'ipotesi di complessità più forte - ovvero l'esistenza di coppie di permutazioni $senza collisioni$ - è necessaria per dimostrare l'esistenza di tali funzioni. (Si veda anche [5] e [6] per ulteriori discussioni sulle proprietà teoriche delle funzioni hash crittografiche).
+Nel paragrafo 4.1 abbiamo menzionato la differenza tra le funzioni hash "senza collisioni" e quelle "universali e unidirezionali". L'esistenza di funzioni unidirezionali è sufficiente a garantire anche l'esistenza di funzioni hash universali unidirezionali. Tuttavia, per dimostrare la sicurezza dei nostri schemi di marcatura temporale, abbiamo apparentemente bisogno di una maggiore garanzia della difficoltà di produrre collisioni di hash, data dalla definizione di funzioni di hash senza collisioni. Per quanto è attualmente noto, un'ipotesi di complessità più forte - ovvero l'esistenza di coppie di permutazioni $senza collisioni$ - è necessaria per dimostrare l'esistenza di tali funzioni. (Si veda anche <a id="r5"></a> [[5]](#l5) e <a id="r6"></a> [[6]](#l6) per ulteriori discussioni sulle proprietà teoriche delle funzioni hash crittografiche).
 
 Le funzioni hash unidirezionali sono lo strumento utilizzato per creare uno schema di firma sicuro. L'apparente bisogno di un'assunzione più forte suggerisce una differenza, forse essenziale, tra le firme e le marche temporali. È interesse del firmatario agire correttamente seguendo le istruzioni di uno schema di firma sicuro (ad esempio, scegliendo casualmente una funzione hash da un opportuno insieme). Per la marcatura temporale, d'altra parte, un utente disonesto o un TSS corrotto potrebbe trovare convenienza a non seguire le istruzioni standard (ad esempio, scegliendo una funzione hash per la quale sia facile trovare collisioni); lo schema di marcatura temporale deve essere ideato in modo tale che questo comportamento scorretto non produca alcun guadagno.
 
-Se possibile, vorremmo ridurre le assunzioni necessarie per la marcatura temporale sicura alla semplice assunzione che esistano funzioni unidirezionali. Questa risulta essere per noi la minima assunzione ragionevole, dal momento che tutta la crittografia basata sulla complessità richiede l'esistenza di funzioni unidirezionali [12, 13].
+Se possibile, vorremmo ridurre le assunzioni necessarie per la marcatura temporale sicura alla semplice assunzione che esistano funzioni unidirezionali. Questa risulta essere per noi la minima assunzione ragionevole, dal momento che tutta la crittografia basata sulla complessità richiede l'esistenza di funzioni unidirezionali <a id="r12"></a> [[12]](#l12), <a id="r13"></a> [[13]](#l13).
 
 ### 6.4 Considerazioni pratiche
 
@@ -209,13 +209,13 @@ Quando si passa dal dominio teorico della complessità a quello dei sistemi crit
 
 Una parziale soluzione a questo problema è fornita dalla possibilità di rinnovare le marche temporali. Supponiamo di avere due implementazioni di marcatura temporale e che ci sia ragione di credere che la prima implementazione sarà presto violata. I certificati emessi con la vecchia implementazione possono essere rigenerati utilizzando quella nuova. Quindi, si consideri un certificato con marca temporale creato con la vecchia implementazione che viene rimarchiato con la nuova implementazione prima che quella vecchia sia violata. Prima della violazione della vecchia implementazione, l'unico modo per creare un certificato era quello legittimo. Pertanto, marcando il certificato stesso con la nuova implementazione, non solo si ha la prova dell'esistenza del documento al momento della nuova marcatura, ma anche della sua esistenza al momento indicato nel certificato originale.
 
-Un altro problema da considerare è che la sola produzione di collisioni di hash non è sufficiente a rompere lo schema di marcatura temporale. Piuttosto, è necessario trovare _documenti significativi_ che portino alla generazione di collisioni. Specificando pertanto il formato di una classe di documenti, è possibile complicare la ricerca di collisioni significative. Ad esempio, la densità di testi composti da soli caratteri ASCII tra tutte le possibili stringhe di bit di lunghezza $N$ bytes è $(2^7/2^8)^N$, ovvero $(1/2)^N$, semplicemente perché il bit più significativo di ciascun byte è sempre 0. Ancora peggio, la densità di un testo inglese accettabile può essere limitata superiormente da una stima dell'entropia dell'inglese giudicata dai madrelingua [21]. Questo valore è di circa 1 bit per carattere ASCII, che porta a una densità di $(2^1/2^8)^N$, ovvero $1/128^N$.
+Un altro problema da considerare è che la sola produzione di collisioni di hash non è sufficiente a rompere lo schema di marcatura temporale. Piuttosto, è necessario trovare _documenti significativi_ che portino alla generazione di collisioni. Specificando pertanto il formato di una classe di documenti, è possibile complicare la ricerca di collisioni significative. Ad esempio, la densità di testi composti da soli caratteri ASCII tra tutte le possibili stringhe di bit di lunghezza $N$ bytes è $(2^7/2^8)^N$, ovvero $(1/2)^N$, semplicemente perché il bit più significativo di ciascun byte è sempre 0. Ancora peggio, la densità di un testo inglese accettabile può essere limitata superiormente da una stima dell'entropia dell'inglese giudicata dai madrelingua <a id="r21"></a> [[21]](#l21). Questo valore è di circa 1 bit per carattere ASCII, che porta a una densità di $(2^1/2^8)^N$, ovvero $1/128^N$.
 
 Lasciamo ai lavori futuri il compito di formalizzare l'aumento della difficoltà di calcolo delle collisioni se i documenti validi sono distribuiti in maniera sparsa e forse casuale nello spazio di input. Allo stesso modo, il fatto che uno schema di collegamento $k-way$ richieda al potenziale attaccante di calcolare collisioni $k-way$ anzichè coppie di collisioni può essere sfruttato per allentare i requisiti della funzione hash. Può risultare significativo investigare la possibilità che esistano funzioni hash per le quali _non esistano_ collisioni $k-way$ tra stringhe in un sottoinsieme opportunatamente ristretto dello spazio di input: la sicurezza di tale sistema non dipenderebbe più dalla assunzione di complessità.
 
 ### 7 Applicazioni
 
-Utilizzando le funzioni di hash, gli schemi di firma e i generatori pseudocasuali teoricamente migliori (crittograficamente sicuri), abbiamo progettato dei sistemi di marcatura temporale aventi le desiderate proprietà teoriche. Tuttavia, vorremmo sottolineare anche la natura pratica della nostra soluzione: poiché esistono implementazioni _pratiche_ di questi strumenti crittografici, entrambi i nostri sistemi di marcatura temporale possono essere implementati come descritto con un costo accettabile. Alcune pratiche funzioni di hash, come quella di Rivest, risultano piuttosto veloci, anche su PC di fascia bassa [19].
+Utilizzando le funzioni di hash, gli schemi di firma e i generatori pseudocasuali teoricamente migliori (crittograficamente sicuri), abbiamo progettato dei sistemi di marcatura temporale aventi le desiderate proprietà teoriche. Tuttavia, vorremmo sottolineare anche la natura pratica della nostra soluzione: poiché esistono implementazioni _pratiche_ di questi strumenti crittografici, entrambi i nostri sistemi di marcatura temporale possono essere implementati come descritto con un costo accettabile. Alcune pratiche funzioni di hash, come quella di Rivest, risultano piuttosto veloci, anche su PC di fascia bassa <a id="r19"></a> [[19]](#l19).
 
 Quali tipi di documenti potrebbero beneficiare di una marcatura temporale digitale sicura? Per i documenti che stabiliscono l'anteriorità di un'invenzione o un'idea, la marcatura temporale ha un chiaro valore. Una caratteristica particolarmente desiderabile della marcatura temporale digitale è rendere dimostrabile la precendenza della proprietà intellettuale senza rivelarne il contenuto. Questo potrebbe avere un effetto significativo sia sul diritto d'autore che sui brevetti e potrebbe essere applicato ovunque, dal software alla formula segreta della Coca-Cola.
 
@@ -223,7 +223,7 @@ Ma cosa fare con i documenti per i quali non sia così significativa la marcatur
 
 Una variante che può essere particolarmente utile per i documenti aziendali è quella di marcare temporalmente un registro di documenti piuttosto che ogni singolo documento. Potrebbe essere calcolato, ad esempio, il valore di hash di ogni documento aziendale creato in un giorno e aggiunto al registro giornaliero dei documenti dell'azienda. Successivamente, alla fine della giornata lavorativa, la marcatura temporale potrebbe essere applicata al solo registro. In questo modo si eliminerebbe la spesa per la marcatura di ogni singolo documento, pur consentendo di rilevare eventuali manomissioni;si potrebbe anche determinare se alcuni di questi documenti siano stati distrutti del tutto.
 
-Naturalmente, la marcatura temporale digitale non è limitata ai documenti di testo. Qualsiasi stringa di bit può essere marcata temporalmente comprese le registrazioni audio digitali, fotografie e video. Essendo la maggior parte di questi documenti a manomissione imprevedibile, la marcatura temporale può aiutare a distinguere una fotografia originale da una manomessa, un problema che negli ultimi tempi ha ricevuto una notevole attenzione da parte della stampa generalista [1, 11]. In effetti, è difficile pensare a qualsiasi altra "correzione" algoritmica che possa incrementare la credibilità di fotografie, video o registrazioni audio rispetto alla marcatura temporale.
+Naturalmente, la marcatura temporale digitale non è limitata ai documenti di testo. Qualsiasi stringa di bit può essere marcata temporalmente comprese le registrazioni audio digitali, fotografie e video. Essendo la maggior parte di questi documenti a manomissione imprevedibile, la marcatura temporale può aiutare a distinguere una fotografia originale da una manomessa, un problema che negli ultimi tempi ha ricevuto una notevole attenzione da parte della stampa generalista <a id="r1"></a> [[1]](#l1), <a id="r11"></a> [[11]](#l11). In effetti, è difficile pensare a qualsiasi altra "correzione" algoritmica che possa incrementare la credibilità di fotografie, video o registrazioni audio rispetto alla marcatura temporale.
 
 ## 8 Sommario
 
@@ -239,47 +239,47 @@ Siamo grati per le utili discussioni con Don Beaver, Shimon Even, George Furnas,
 
 ## Riferimenti bibliografici
 
-[1] J. Alter - When photographs lie. _Newsweek_, pp. 44-45, 30 Luglio, 1990
+<a id="l1"></a> [[1]](#r1)  J. Alter - When photographs lie. _Newsweek_, pp. 44-45, 30 Luglio, 1990
 
-[2] M. Blum e S. Micali - How to generate cryptographically strong sequences of pseudo-random bits. _SIAM Journal on Computing_, 13(4):850-864, Novembre 1984
+<a id="l2"></a> [[2]](#r2) M. Blum e S. Micali - How to generate cryptographically strong sequences of pseudo-random bits. _SIAM Journal on Computing_, 13(4):850-864, Novembre 1984
 
-[3] G. Brassard e M. Yung - One-way group actions. In _Advances in Cryptology-Crypto '90_, these proceedings. Lecture Notes in Computer Science, Springer-Verlag, Berlino, 1991
+<a id="l3"></a> [[3]](#r3) G. Brassard e M. Yung - One-way group actions. In _Advances in Cryptology-Crypto '90_, these proceedings. Lecture Notes in Computer Science, Springer-Verlag, Berlino, 1991
 
-[4] I. Damgård - Collision-free hash functions and public-key signature schemes. In _Advances in Cryptology-Eurocrypt '87_, pp. 203-217. Lecture Notes in Computer Science, vol. 304, Springer-Verlag, Berlino, 1988
+<a id="l4"></a> [[4]](#r4) I. Damgård - Collision-free hash functions and public-key signature schemes. In _Advances in Cryptology-Eurocrypt '87_, pp. 203-217. Lecture Notes in Computer Science, vol. 304, Springer-Verlag, Berlino, 1988
 
-[5] I. Damgård - A design principle for hash functions. In _Advances in Cryptology-Crypto '89_ (ed. G. Brassard), pp. 416-427. Lecture Notes in Computer Science, vol. 435, Springer-Verlag, Berlino, 1990
+<a id="l5"></a> [[5]](#r5) I. Damgård - A design principle for hash functions. In _Advances in Cryptology-Crypto '89_ (ed. G. Brassard), pp. 416-427. Lecture Notes in Computer Science, vol. 435, Springer-Verlag, Berlino, 1990
 
-[6] A. DeSantis e M. Yung - On the design of provably secure cryptographic hash functions. In _Advances in Cryptology-Eurocrypt '90_. Lecture Notes in Computer Science, Springer-Verlag, Berlino, in attesa di pubblicazione
+<a id="l6"></a> [[6]](#r6) A. DeSantis e M. Yung - On the design of provably secure cryptographic hash functions. In _Advances in Cryptology-Eurocrypt '90_. Lecture Notes in Computer Science, Springer-Verlag, Berlino, in attesa di pubblicazione
 
-[7] W. Diffie e M.E. Hellman - New directions in cryptography. _IEEE Trans. on Inform. Theory_, vol. IT-22, pp. 644-654, Novembre 1976
+<a id="l7"></a> [[7]](#r7) W. Diffie e M.E. Hellman - New directions in cryptography. _IEEE Trans. on Inform. Theory_, vol. IT-22, pp. 644-654, Novembre 1976
 
-[8] Z. Galil, S. Haber e M. Yung - Interactive public-key cryptosystems. Candidato alla pubblicazione, 1990
+<a id="l8"></a> [[8]](#r8) Z. Galil, S. Haber e M. Yung - Interactive public-key cryptosystems. Candidato alla pubblicazione, 1990
 
-[9] S. Goldwasser e S. Micali - Probabilistic encryption. _JCSS_, 28:270-299, Aprile 1984
+<a id="l9"></a> [[9]](#r9) S. Goldwasser e S. Micali - Probabilistic encryption. _JCSS_, 28:270-299, Aprile 1984
 
-[10] S. Goldwasser, S. Micali, e R. Rivest - A secure digital signature scheme. _SIAM Journal on Computing_, 17(2):281-308, 1988
+<a id="l10"></a> [[10]](#r10) S. Goldwasser, S. Micali, e R. Rivest - A secure digital signature scheme. _SIAM Journal on Computing_, 17(2):281-308, 1988
 
-[11] Andy Grundberg - Ask it no questions: The camera can lie. _The New York Times, section 2_, pp. 1, 29, 12 Agosto 1990
+<a id="l11"></a> [[11]](#r11) Andy Grundberg - Ask it no questions: The camera can lie. _The New York Times, section 2_, pp. 1, 29, 12 Agosto 1990
 
-[12] R. Impagliazzo, L. Levin, e M. Luby - Pseudorandom generation from one-way functions. In _Proc. 2lst STOC_, pp. 12-24. ACM, New York, 1989
+<a id="l12"></a> [[12]](#r12) R. Impagliazzo, L. Levin, e M. Luby - Pseudorandom generation from one-way functions. In _Proc. 2lst STOC_, pp. 12-24. ACM, New York, 1989
 
-[13] R. Impagliazzo e M. Luby - One-way functions are essential for complexity-based cryptography. In _Proc. 30th FOGS_, pp. 230-235. IEEE, New York, 1989
+<a id="l13"></a> [[13]](#r13) R. Impagliazzo e M. Luby - One-way functions are essential for complexity-based cryptography. In _Proc. 30th FOGS_, pp. 230-235. IEEE, New York, 1989
 
-[14] H. M. Kanare - Writing the laboratory notebook - p. 117. _American Chemical Society, Washington, D.C._, 1985
+<a id="l14"></a> [[14]](#r14) H. M. Kanare - Writing the laboratory notebook - p. 117. _American Chemical Society, Washington, D.C._, 1985
 
-[15] R.C. Merkle - Secrecy, authentication, and public-key systems. Ph.D. thesis, Stanford University, 1979
+<a id="l15"></a> [[15]](#r15) R.C. Merkle - Secrecy, authentication, and public-key systems. Ph.D. thesis, Stanford University, 1979
 
-[16] R.C. Merkle - One-way hash functions and DES. In _Advances in Cryptology-Crypto '89_ (ed. G. Brassard), pp. 428-446. Lecture Notes in Computer Science, vol. 435, Springer-Veriag, Berlino, 1990
+<a id="l16"></a> [[16]](#r16) R.C. Merkle - One-way hash functions and DES. In _Advances in Cryptology-Crypto '89_ (ed. G. Brassard), pp. 428-446. Lecture Notes in Computer Science, vol. 435, Springer-Veriag, Berlino, 1990
 
-[17] M. Naor e M. Yung - Universal one-way hash functions and their cryptographic applications. In _Proc. 21st STOC_, pp. 33-43. ACM, New York, 1989
+<a id="l17"></a> [[17]](#r17) M. Naor e M. Yung - Universal one-way hash functions and their cryptographic applications. In _Proc. 21st STOC_, pp. 33-43. ACM, New York, 1989
 
-[18] M.O. Rabin - Digitalized signatures. In _Foundations of Secure Computation_ (ed. R.A. DeMillo et al.), pp. 155-168. Academic Press, 1978
+<a id="l18"></a> [[18]](#r18) M.O. Rabin - Digitalized signatures. In _Foundations of Secure Computation_ (ed. R.A. DeMillo et al.), pp. 155-168. Academic Press, 1978
 
-[19] R. Rivest - The MD4 message digest algorithm. In _Advances in Cryptoloqy-Crypto '90_, these proceedings. Lecture Notes in Computer Science, Springer-Verlag, Berlino, 1991
+<a id="l19"></a> [[19]](#r19) R. Rivest - The MD4 message digest algorithm. In _Advances in Cryptoloqy-Crypto '90_, these proceedings. Lecture Notes in Computer Science, Springer-Verlag, Berlino, 1991
 
-[20] J. Rompel - One-way functions are necessary and sufficient for secure signatures. In _Proc. 22nd STOC_, pp. 387-394. ACM, New York, 1990
+<a id="l20"></a> [[20]](#r20) J. Rompel - One-way functions are necessary and sufficient for secure signatures. In _Proc. 22nd STOC_, pp. 387-394. ACM, New York, 1990
 
-[21] C. Shannon - Prediction and entropy of printed English. _Bell System Technical Journal_, vol. 30 pp. 50-64, 1951
+<a id="l21"></a> [[21]](#r21) C. Shannon - Prediction and entropy of printed English. _Bell System Technical Journal_, vol. 30 pp. 50-64, 1951
 
-[22] A.C. Yao - Theory and applications of trapdoor functions. In _Proc. 23rd FOCS_, pp. 80-91. IEEE, New York, 1982
+<a id="l22"></a> [[22]](#r22) A.C. Yao - Theory and applications of trapdoor functions. In _Proc. 23rd FOCS_, pp. 80-91. IEEE, New York, 1982
 
