@@ -12,4 +12,3 @@ draft: false
 </div>
 
 <br>
-Ci stiamo lavorando...
